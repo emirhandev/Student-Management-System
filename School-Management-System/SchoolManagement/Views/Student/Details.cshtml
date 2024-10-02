@@ -1,0 +1,56 @@
+﻿@model SchoolManagement.Models.Table
+
+@{
+    ViewBag.Title = "Student Details";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Student Details</h2>
+
+    <div class="card p-4 shadow-sm">
+        <div class="row align-items-center">
+            <!-- Left Side: Student Information -->
+            <div class="col-md-8">
+                <h4 class="mb-3">Student Information</h4>
+                <dl class="row">
+                    <dt class="col-sm-4 fw-bold">
+                        @Html.DisplayNameFor(model => model.StudentName)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.StudentName)
+                    </dd>
+
+                    <dt class="col-sm-4 fw-bold">
+                        @Html.DisplayNameFor(model => model.StudentSurname)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.StudentSurname)
+                    </dd>
+
+                    <dt class="col-sm-4 fw-bold">
+                        @Html.DisplayNameFor(model => model.StudentMail)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.StudentMail)
+                    </dd>
+
+                    <dt class="col-sm-4 fw-bold">
+                        @Html.DisplayNameFor(model => model.StudentAdress)
+                    </dt>
+                    <dd class="col-sm-8">
+                        @Html.DisplayFor(model => model.StudentAdress)
+                    </dd>
+                </dl>
+            </div>
+
+            <!-- Right Side: Student Picture and Buttons -->
+            <div class="col-md-4 text-center">
+                <img src="@Model.StudentPicture" width="250px" height="250px" class="img-thumbnail mb-3" />
+                <div>
+                    @Html.ActionLink("Edit", "Edit", new { id = Model.StudentId }, new { @class = "btn btn-warning me-2" })
+                    @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-secondary" })
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

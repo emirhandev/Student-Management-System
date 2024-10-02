@@ -1,0 +1,36 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<main aria-labelledby="title" style="max-width: 600px; margin: auto; padding: 20px; display: flex; align-items: flex-start;">
+    <img src="https://avatars.githubusercontent.com/u/97605841?v=4" alt="Emirhan ÖNDER" style="max-width: 250px; height: auto; margin-right: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); flex-shrink: 0; display: block;" />
+
+    <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+            <h2 id="title" style="font-size: 2em; margin-bottom: 10px;">@ViewBag.Title</h2>
+            <h3 style="font-size: 1.5em; color: #555;">@ViewBag.Message</h3>
+
+            <address style="margin-bottom: 20px;">
+                <strong>Address:</strong><br />
+                İstanbul - Türkiye<br />
+                <strong>Phone:</strong> 123 456 789
+            </address>
+
+            <address style="margin-bottom: 20px;">
+                <strong>Support:</strong> <a href="mailto:dev.emirhanonder@gmail.com">dev.emirhanonder@gmail.com</a><br />
+            </address>
+        </div>
+
+        <div style="display: flex; gap: 15px; margin-top: auto;">
+            <a href="https://github.com/emirhandev" target="_blank">
+                <div style="background-color: #1B1F23; display: inline-block; padding: 5px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); ">
+                    <img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png" alt="GitHub" style="width: 40px; height: 40px; cursor: pointer;" />
+                </div>
+            </a>
+            <a href="https://www.linkedin.com/in/emirhan-%C3%B6nder-296332207/" target="_blank">
+                <div style="background-color: #0274B3; display: inline-block; padding: 5px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); ">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn" style="width: 40px; height: 40px; cursor: pointer;" />
+                </div>
+            </a>
+        </div>
+    </div>
+</main>
